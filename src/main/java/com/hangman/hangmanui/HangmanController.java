@@ -38,6 +38,8 @@ public class HangmanController {
         m.addAttribute("word",result);
     }
 
+
+
     @PostMapping("/new")
     public String valueSubmit(@ModelAttribute EnteredChar enteredChar,  Model model) {
         String w = "";

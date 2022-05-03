@@ -1,0 +1,76 @@
+   <style>
+        body{
+         background-color: #000000;
+         padding: 0px;
+         margin: 0px;
+       }
+
+    #gradient
+    {
+      width: 100%;
+      height: 800px;
+      padding: 0px;
+      margin: 0px;
+    }
+        html, body {
+            min-height: 100%;
+        }
+        h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+        h3 {
+            margin: 12px 0;
+            color: #00008B;
+            font-family: sans-serif;
+        }
+
+        form {
+            width: 50%;
+            padding: 20px;
+        }
+        fieldset {
+            border: none;
+            border-top: 1px solid #8ebf42;
+        }
+        .account-details, .personal-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .account-details >div, .personal-details >div >div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .account-details >div, .personal-details >div, input, label {
+            width: 100%;
+        }
+        label {
+            padding: 0 5px;
+            text-align: right;
+            vertical-align: middle;
+        }
+        input {
+            padding: 5px;
+            vertical-align: middle;
+             width: 25%;
+        }
+
+
+        button {
+            width: 20%;
+            padding: 10px 0;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: none;
+            background: #FFFFFF;
+            font-size: 14px;
+            font-weight: 600;
+            color: #00008B;
+        }
+        button:hover {
+            background: #ADD8E6;
+        }
+        }
+    </style>
