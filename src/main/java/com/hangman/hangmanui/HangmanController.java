@@ -38,14 +38,11 @@ public class HangmanController {
         m.addAttribute("word",result);
     }
 
-
-
     @PostMapping("/new")
     public String valueSubmit(@ModelAttribute EnteredChar enteredChar,  Model model) {
         String w = "";
 
         if (attempts <= 5 && success == false) {
-
             model.addAttribute("enteredChar", enteredChar);
             String uri = "http://localhost:9999/api/character";
             RestTemplate restt = new RestTemplate();
@@ -61,7 +58,6 @@ public class HangmanController {
                 } else {
                     return "updatedindex";
                 }
-
             } else {
                 attempts++;
                 model.addAttribute("attempts",attempts);
@@ -73,12 +69,6 @@ public class HangmanController {
              model.addAttribute("word", w);
              return "attemptfailfinal";
         }
-
-
-
     }
-
-
-
 
 }
